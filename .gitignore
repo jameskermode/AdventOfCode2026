@@ -1,0 +1,37 @@
+# Cabal
+dist/
+dist-newstyle/
+cabal.project.local
+cabal.project.local~
+.cabal-sandbox/
+cabal.sandbox.config
+.ghc.environment.*
+
+# Stack
+.stack-work/
+
+# GHC build products
+*.o
+*.hi
+*.hie
+*.dyn_o
+*.dyn_hi
+*.chi
+*.chs.h
+
+# Profiling and coverage
+*.prof
+*.aux
+*.hp
+*.eventlog
+*.tix
+.hpc/
+
+# Tooling
+.hie/
+.hsenv/
+.virtualenv/
+
+# Editors / OS
+.DS_Store
+*~
