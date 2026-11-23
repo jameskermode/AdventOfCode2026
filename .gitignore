@@ -35,3 +35,6 @@ cabal.sandbox.config
 # Editors / OS
 .DS_Store
 *~
+
+# Puzzle inputs (AoC asks that these are not redistributed)
+data/
