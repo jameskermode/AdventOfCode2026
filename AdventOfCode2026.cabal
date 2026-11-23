@@ -8,7 +8,7 @@ author:             James Kermode
 maintainer:         james.kermode@gmail.com
 category:           Development
 build-type:         Simple
-extra-doc-files:    CHANGELOG.md
+extra-doc-files:    CHANGELOG.md, README.md
 
 common shared
     ghc-options:      -Wall
