@@ -2,6 +2,7 @@
 module AoC
   ( Solution (..),
     inputPath,
+    testInputPath,
     runSolution,
   )
 where
@@ -18,6 +19,10 @@ data Solution = Solution
 -- | Default location of the input for a given day, e.g. @data/01.txt@.
 inputPath :: Int -> FilePath
 inputPath = printf "data/%02d.txt"
+
+-- | Location of the worked example for a given day, e.g. @data/01-test.txt@.
+testInputPath :: Int -> FilePath
+testInputPath = printf "data/%02d-test.txt"
 
 -- | Read the input file and print both answers.
 runSolution :: Int -> FilePath -> Solution -> IO ()

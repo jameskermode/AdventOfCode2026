@@ -17,6 +17,7 @@ common shared
         base ^>=4.20.2.0,
         bytestring,
         containers,
+        directory,
         megaparsec,
         split,
         text,
@@ -27,16 +28,20 @@ library
     hs-source-dirs:   src
 
     -- Add each new DayNN module here, and to the table in src/Days.hs.
+    -- Keep Run first: GHCi puts the first module in scope, which makes
+    -- runDay and testDay available straight away in `cabal repl`.
     exposed-modules:
+        Run
         AoC
         Days
         Day01
+        WarmUp
 
 executable AdventOfCode2026
     import:           shared
     main-is:          Main.hs
     hs-source-dirs:   app
-    build-depends:    AdventOfCode2026, directory
+    build-depends:    AdventOfCode2026
     ghc-options:      -O2 -threaded -rtsopts
 
 test-suite AdventOfCode2026-test
